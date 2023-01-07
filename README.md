@@ -30,5 +30,30 @@ source venv/bin/activate
 pip install -r  requirements.txt
 ```
 
+##### Create search_backend/secrets.py file
+```shell
+SECRET_KEY = 'django-secret-key'
+DEBUG = True
+ALLOWED_HOSTS = []
+
+# mongo creds
+MONGO_USER = "mongo_user"
+MONGO_PASS = "mongo_pass"
+MONGO_PDA_HOST = "127.0.0.1:27017"
+search_database = 'search_app_db'
+users_search_col = 'users'
+organizations_search_col = 'organizations'
+tickets_search_col = 'tickets'
+
+MONGO_DATABASE_HOST = "mongodb://" + MONGO_USER + ":" + MONGO_PASS + "@"+MONGO_PDA_HOST+"/?authSource=admin" 
+```
+
+##### Run django server
+```shell
+python manage.py runserver 8000
+```
+
+##### Import postman collection from 'Search Backend.postman_collection.json' file
+
 ## Road Map/Future Plan
 - Writing Django unit tests
