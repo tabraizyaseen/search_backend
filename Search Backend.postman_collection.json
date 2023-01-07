@@ -1,0 +1,1358 @@
+{
+	"info": {
+		"_postman_id": "ec21d179-47e3-4a07-8909-a6e795783839",
+		"name": "Search Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20249668"
+	},
+	"item": [
+		{
+			"name": "landing page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:07:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "177"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Welcome to Zendesk Search\",\n    \"data\": {\n        \"Users\": \"http://127.0.0.1:8000/1/\",\n        \"Tickets\": \"http://127.0.0.1:8000/2/\",\n        \"Organizations\": \"http://127.0.0.1:8000/3/\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "users_search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"1",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:08:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1489"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"List of Searchable Values\",\n    \"data\": {\n        \"_id\": \"http://127.0.0.1:8000/1/_id?value=<insert_your_value_here>\",\n        \"url\": \"http://127.0.0.1:8000/1/url?value=<insert_your_value_here>\",\n        \"external_id\": \"http://127.0.0.1:8000/1/external_id?value=<insert_your_value_here>\",\n        \"name\": \"http://127.0.0.1:8000/1/name?value=<insert_your_value_here>\",\n        \"alias\": \"http://127.0.0.1:8000/1/alias?value=<insert_your_value_here>\",\n        \"created_at\": \"http://127.0.0.1:8000/1/created_at?value=<insert_your_value_here>\",\n        \"active\": \"http://127.0.0.1:8000/1/active?value=<insert_your_value_here>\",\n        \"verified\": \"http://127.0.0.1:8000/1/verified?value=<insert_your_value_here>\",\n        \"shared\": \"http://127.0.0.1:8000/1/shared?value=<insert_your_value_here>\",\n        \"locale\": \"http://127.0.0.1:8000/1/locale?value=<insert_your_value_here>\",\n        \"timezone\": \"http://127.0.0.1:8000/1/timezone?value=<insert_your_value_here>\",\n        \"last_login_at\": \"http://127.0.0.1:8000/1/last_login_at?value=<insert_your_value_here>\",\n        \"email\": \"http://127.0.0.1:8000/1/email?value=<insert_your_value_here>\",\n        \"phone\": \"http://127.0.0.1:8000/1/phone?value=<insert_your_value_here>\",\n        \"signature\": \"http://127.0.0.1:8000/1/signature?value=<insert_your_value_here>\",\n        \"organization_id\": \"http://127.0.0.1:8000/1/organization_id?value=<insert_your_value_here>\",\n        \"tags\": \"http://127.0.0.1:8000/1/tags?value=<insert_your_value_here>\",\n        \"suspended\": \"http://127.0.0.1:8000/1/suspended?value=<insert_your_value_here>\",\n        \"role\": \"http://127.0.0.1:8000/1/role?value=<insert_your_value_here>\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "user_fields_search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/1/active?value=true",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"1",
+						"active"
+					],
+					"query": [
+						{
+							"key": "value",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/1/_id?value=71",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"1",
+								"_id"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "71"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:09:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "586"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Search Results\",\n    \"data\": [\n        {\n            \"_id\": 71,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/71.json\",\n            \"external_id\": \"c972bb41-94aa-4f20-bc93-e63dbfe8d9ca\",\n            \"name\": \"Prince Hinton\",\n            \"alias\": \"Miss Dana\",\n            \"created_at\": \"2016-04-18T11:05:43 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Samoa\",\n            \"last_login_at\": \"2013-05-01T01:18:48 -10:00\",\n            \"email\": \"danahinton@flotonic.com\",\n            \"phone\": \"9064-433-892\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 121,\n            \"tags\": [\n                \"Davenport\",\n                \"Cherokee\",\n                \"Summertown\",\n                \"Clinton\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "missing value query parameter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/1/_id?valued=71",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"1",
+								"_id"
+							],
+							"query": [
+								{
+									"key": "valued",
+									"value": "71"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:15:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "140"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": true,\n    \"message\": \"Please Provide Value Query Parameter\",\n    \"data\": {\n        \"_id\": \"http://127.0.0.1:8000/1/_id/?value=<insert_your_value_here>\"\n    }\n}"
+				},
+				{
+					"name": "wrong searchable field",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/1/_iding",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"1",
+								"_iding"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:16:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1492"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": true,\n    \"message\": \"Please Search on These Values\",\n    \"data\": {\n        \"_id\": \"http://127.0.0.1:8000/1/_id?value=<insert_your_value_here>\",\n        \"url\": \"http://127.0.0.1:8000/1/url?value=<insert_your_value_here>\",\n        \"external_id\": \"http://127.0.0.1:8000/1/external_id?value=<insert_your_value_here>\",\n        \"name\": \"http://127.0.0.1:8000/1/name?value=<insert_your_value_here>\",\n        \"alias\": \"http://127.0.0.1:8000/1/alias?value=<insert_your_value_here>\",\n        \"created_at\": \"http://127.0.0.1:8000/1/created_at?value=<insert_your_value_here>\",\n        \"active\": \"http://127.0.0.1:8000/1/active?value=<insert_your_value_here>\",\n        \"verified\": \"http://127.0.0.1:8000/1/verified?value=<insert_your_value_here>\",\n        \"shared\": \"http://127.0.0.1:8000/1/shared?value=<insert_your_value_here>\",\n        \"locale\": \"http://127.0.0.1:8000/1/locale?value=<insert_your_value_here>\",\n        \"timezone\": \"http://127.0.0.1:8000/1/timezone?value=<insert_your_value_here>\",\n        \"last_login_at\": \"http://127.0.0.1:8000/1/last_login_at?value=<insert_your_value_here>\",\n        \"email\": \"http://127.0.0.1:8000/1/email?value=<insert_your_value_here>\",\n        \"phone\": \"http://127.0.0.1:8000/1/phone?value=<insert_your_value_here>\",\n        \"signature\": \"http://127.0.0.1:8000/1/signature?value=<insert_your_value_here>\",\n        \"organization_id\": \"http://127.0.0.1:8000/1/organization_id?value=<insert_your_value_here>\",\n        \"tags\": \"http://127.0.0.1:8000/1/tags?value=<insert_your_value_here>\",\n        \"suspended\": \"http://127.0.0.1:8000/1/suspended?value=<insert_your_value_here>\",\n        \"role\": \"http://127.0.0.1:8000/1/role?value=<insert_your_value_here>\"\n    }\n}"
+				},
+				{
+					"name": "search on datetime field",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/1/created_at?value=2016-02-09T07:52:10 -11:00",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"1",
+								"created_at"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "2016-02-09T07:52:10 -11:00"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:18:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "583"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Search Results\",\n    \"data\": [\n        {\n            \"_id\": 4,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/4.json\",\n            \"external_id\": \"37c9aef5-cf01-4b07-af24-c6c49ac1d1c7\",\n            \"name\": \"Rose Newton\",\n            \"alias\": \"Mr Cardenas\",\n            \"created_at\": \"2016-02-09T07:52:10 -11:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": true,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Netherlands\",\n            \"last_login_at\": \"2012-09-25T01:32:46 -10:00\",\n            \"email\": \"cardenasnewton@flotonic.com\",\n            \"phone\": \"8685-482-450\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 122,\n            \"tags\": [\n                \"Gallina\",\n                \"Glenshaw\",\n                \"Rowe\",\n                \"Babb\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "search on boolean filed",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/1/active?value=true",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"1",
+								"active"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:19:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20843"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Search Results\",\n    \"data\": [\n        {\n            \"_id\": 1,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/1.json\",\n            \"external_id\": \"74341f74-9c79-49d5-9611-87ef9b6eb75f\",\n            \"name\": \"Francisca Rasmussen\",\n            \"alias\": \"Miss Coffey\",\n            \"created_at\": \"2016-04-15T05:19:46 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Sri Lanka\",\n            \"last_login_at\": \"2013-08-04T01:03:27 -10:00\",\n            \"email\": \"coffeyrasmussen@flotonic.com\",\n            \"phone\": \"8335-422-718\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 119,\n            \"tags\": [\n                \"Springville\",\n                \"Sutton\",\n                \"Hartsville/Hartley\",\n                \"Diaperville\"\n            ],\n            \"suspended\": true,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 2,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/2.json\",\n            \"external_id\": \"c9995ea4-ff72-46e0-ab77-dfe0ae1ef6c2\",\n            \"name\": \"Cross Barlow\",\n            \"alias\": \"Miss Joni\",\n            \"created_at\": \"2016-06-23T10:31:39 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Armenia\",\n            \"last_login_at\": \"2012-04-12T04:03:28 -10:00\",\n            \"email\": \"jonibarlow@flotonic.com\",\n            \"phone\": \"9575-552-585\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 106,\n            \"tags\": [\n                \"Foxworth\",\n                \"Woodlands\",\n                \"Herlong\",\n                \"Henrietta\"\n            ],\n            \"suspended\": false,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 4,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/4.json\",\n            \"external_id\": \"37c9aef5-cf01-4b07-af24-c6c49ac1d1c7\",\n            \"name\": \"Rose Newton\",\n            \"alias\": \"Mr Cardenas\",\n            \"created_at\": \"2016-02-09T07:52:10 -11:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": true,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Netherlands\",\n            \"last_login_at\": \"2012-09-25T01:32:46 -10:00\",\n            \"email\": \"cardenasnewton@flotonic.com\",\n            \"phone\": \"8685-482-450\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 122,\n            \"tags\": [\n                \"Gallina\",\n                \"Glenshaw\",\n                \"Rowe\",\n                \"Babb\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 5,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/5.json\",\n            \"external_id\": \"29c18801-fb42-433d-8674-f37d63e637df\",\n            \"name\": \"Loraine Pittman\",\n            \"alias\": \"Mr Ola\",\n            \"created_at\": \"2016-06-12T08:49:19 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Monaco\",\n            \"last_login_at\": \"2013-07-03T06:59:27 -10:00\",\n            \"email\": \"olapittman@flotonic.com\",\n            \"phone\": \"9805-292-618\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 101,\n            \"tags\": [\n                \"Frizzleburg\",\n                \"Forestburg\",\n                \"Sandston\",\n                \"Delco\"\n            ],\n            \"suspended\": false,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 9,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/9.json\",\n            \"external_id\": \"215e9cb6-cd30-444d-95f3-4c172d68859d\",\n            \"name\": \"Josefa Mcfadden\",\n            \"alias\": \"Mr Casey\",\n            \"created_at\": \"2016-03-26T04:11:05 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"France, Metropolitan\",\n            \"last_login_at\": \"2013-04-25T09:04:57 -10:00\",\n            \"email\": \"caseymcfadden@flotonic.com\",\n            \"phone\": \"8715-273-472\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 123,\n            \"tags\": [\n                \"Fresno\",\n                \"Shawmut\",\n                \"Buxton\",\n                \"Winchester\"\n            ],\n            \"suspended\": true,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 10,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/10.json\",\n            \"external_id\": \"f744706e-df3d-4d51-ad18-c63e41be5cc0\",\n            \"name\": \"Kari Vinson\",\n            \"alias\": \"Mr Webb\",\n            \"created_at\": \"2016-02-08T04:32:38 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Germany\",\n            \"last_login_at\": \"2014-12-26T04:54:30 -11:00\",\n            \"email\": \"webbvinson@flotonic.com\",\n            \"phone\": \"8235-883-140\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 105,\n            \"tags\": [\n                \"Moraida\",\n                \"Beechmont\",\n                \"Jeff\",\n                \"Starks\"\n            ],\n            \"suspended\": false,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 11,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/11.json\",\n            \"external_id\": \"f844d39b-1d2c-4908-8719-48b5930bc6a2\",\n            \"name\": \"Shelly Clements\",\n            \"alias\": \"Miss Campos\",\n            \"created_at\": \"2016-06-10T06:50:13 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": true,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Moldova\",\n            \"last_login_at\": \"2016-02-28T04:06:24 -11:00\",\n            \"phone\": \"9494-882-401\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 103,\n            \"tags\": [\n                \"Camptown\",\n                \"Glenville\",\n                \"Harleigh\",\n                \"Tedrow\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 13,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/13.json\",\n            \"external_id\": \"dce36d80-f143-4b1e-8a2e-47651e367a4e\",\n            \"name\": \"Wade Moore\",\n            \"alias\": \"Mr Vera\",\n            \"created_at\": \"2016-06-02T01:11:48 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Saudi Arabia\",\n            \"last_login_at\": \"2012-08-03T05:09:18 -10:00\",\n            \"email\": \"veramoore@flotonic.com\",\n            \"phone\": \"8395-652-590\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 112,\n            \"tags\": [\n                \"Bartonsville\",\n                \"Frystown\",\n                \"Sparkill\",\n                \"Dola\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 15,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/15.json\",\n            \"external_id\": \"6060c1b0-f523-4ce4-a993-0ae7a1e9b2cd\",\n            \"name\": \"Jeri Estrada\",\n            \"alias\": \"Miss Byers\",\n            \"created_at\": \"2016-01-14T01:37:39 -11:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Tuvalu\",\n            \"last_login_at\": \"2014-05-26T12:25:24 -10:00\",\n            \"email\": \"byersestrada@flotonic.com\",\n            \"phone\": \"8294-733-398\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 115,\n            \"tags\": [\n                \"Belmont\",\n                \"Ferney\",\n                \"Whitewater\",\n                \"Hollins\"\n            ],\n            \"suspended\": true,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 16,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/16.json\",\n            \"external_id\": \"08b3023c-c5c6-4acf-8256-8d091687505e\",\n            \"name\": \"Woodard Burt\",\n            \"alias\": \"Miss Michael\",\n            \"created_at\": \"2016-07-29T10:14:37 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Wallis and Futuna Islands\",\n            \"last_login_at\": \"2014-12-03T11:14:55 -11:00\",\n            \"email\": \"michaelburt@flotonic.com\",\n            \"phone\": \"9685-703-824\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"tags\": [\n                \"Wollochet\",\n                \"Cuylerville\",\n                \"Bellamy\",\n                \"Hillsboro\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 17,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/17.json\",\n            \"external_id\": \"d450d3dd-ef44-40a3-8c1b-dd8dcbad26d1\",\n            \"name\": \"Tyler Bates\",\n            \"alias\": \"Miss Myra\",\n            \"created_at\": \"2016-01-05T10:55:04 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"timezone\": \"Estonia\",\n            \"last_login_at\": \"2016-08-12T03:24:16 -10:00\",\n            \"email\": \"myrabates@flotonic.com\",\n            \"phone\": \"8905-642-934\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 113,\n            \"tags\": [\n                \"Snelling\",\n                \"Fontanelle\",\n                \"Dowling\",\n                \"Conestoga\"\n            ],\n            \"suspended\": true,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 18,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/18.json\",\n            \"external_id\": \"2771c7b7-4020-4103-8a8b-e5f386b912c5\",\n            \"name\": \"Adriana Ryan\",\n            \"alias\": \"Miss Marissa\",\n            \"created_at\": \"2016-05-28T05:19:09 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Italy\",\n            \"last_login_at\": \"2014-12-30T03:36:50 -11:00\",\n            \"email\": \"marissaryan@flotonic.com\",\n            \"phone\": \"8644-863-078\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 103,\n            \"tags\": [\n                \"Dotsero\",\n                \"Wilmington\",\n                \"Farmington\",\n                \"Trinway\"\n            ],\n            \"suspended\": true,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 21,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/21.json\",\n            \"external_id\": \"b4524a24-212a-4ce5-ba6b-c488b72a3ad5\",\n            \"name\": \"Leon Oneil\",\n            \"alias\": \"Miss Dee\",\n            \"created_at\": \"2016-03-01T03:12:09 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Bosnia and Herzegovina\",\n            \"last_login_at\": \"2014-12-10T06:19:41 -11:00\",\n            \"email\": \"deeoneil@flotonic.com\",\n            \"phone\": \"9314-713-633\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 110,\n            \"tags\": [\n                \"Faxon\",\n                \"Bellfountain\",\n                \"Gracey\",\n                \"Muir\"\n            ],\n            \"suspended\": false,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 22,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/22.json\",\n            \"external_id\": \"bf313bac-e4b1-46a3-a7ee-7cc584b7cbb8\",\n            \"name\": \"Russo Vincent\",\n            \"alias\": \"Miss Cohen\",\n            \"created_at\": \"2016-01-28T08:49:17 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Qatar\",\n            \"last_login_at\": \"2014-07-30T03:32:49 -10:00\",\n            \"email\": \"cohenvincent@flotonic.com\",\n            \"phone\": \"8895-892-293\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 124,\n            \"tags\": [\n                \"Veyo\",\n                \"Highland\",\n                \"Kiskimere\",\n                \"Hoehne\"\n            ],\n            \"suspended\": false,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 23,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/23.json\",\n            \"external_id\": \"e9db9277-af4a-4ca6-99e0-291c8a97623e\",\n            \"name\": \"Francis Bailey\",\n            \"alias\": \"Miss Singleton\",\n            \"created_at\": \"2016-03-21T07:12:28 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Antarctica\",\n            \"last_login_at\": \"2012-12-01T11:14:01 -11:00\",\n            \"email\": \"singletonbailey@flotonic.com\",\n            \"phone\": \"9584-582-815\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 101,\n            \"tags\": [\n                \"Leola\",\n                \"Graball\",\n                \"Yogaville\",\n                \"Tivoli\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 30,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/30.json\",\n            \"external_id\": \"33ee4880-9ff2-4233-ae8a-24b9d5cc03b2\",\n            \"name\": \"Debra William\",\n            \"alias\": \"Mr Murray\",\n            \"created_at\": \"2016-03-05T05:38:13 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Zambia\",\n            \"last_login_at\": \"2015-01-22T06:48:31 -11:00\",\n            \"email\": \"murraywilliam@flotonic.com\",\n            \"phone\": \"9734-862-052\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 116,\n            \"tags\": [\n                \"Chesterfield\",\n                \"Brutus\",\n                \"Echo\",\n                \"Valmy\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 31,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/31.json\",\n            \"external_id\": \"e9121c21-0321-4024-a844-5d869ddc1343\",\n            \"name\": \"Jessica Raymond\",\n            \"alias\": \"Miss Carroll\",\n            \"created_at\": \"2016-01-10T05:55:31 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Greece\",\n            \"last_login_at\": \"2016-06-06T04:20:09 -10:00\",\n            \"email\": \"carrollraymond@flotonic.com\",\n            \"phone\": \"9794-023-473\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 104,\n            \"tags\": [\n                \"Chalfant\",\n                \"Calverton\",\n                \"Flintville\",\n                \"Yonah\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 32,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/32.json\",\n            \"external_id\": \"b8ef8d96-4d64-49a3-b2c6-b04bdc23ba01\",\n            \"name\": \"Lee Dotson\",\n            \"alias\": \"Mr Eve\",\n            \"created_at\": \"2016-07-17T02:09:22 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"France\",\n            \"last_login_at\": \"2016-08-21T09:09:09 -10:00\",\n            \"email\": \"evedotson@flotonic.com\",\n            \"phone\": \"8485-142-308\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 105,\n            \"tags\": [\n                \"Tetherow\",\n                \"Hailesboro\",\n                \"Barstow\",\n                \"Fruitdale\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 34,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/34.json\",\n            \"external_id\": \"36dc7f6c-4b66-4a0e-bf0b-1b2b294ca730\",\n            \"name\": \"Gallegos Armstrong\",\n            \"alias\": \"Mr Dale\",\n            \"created_at\": \"2016-02-09T01:34:46 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Papua New Guinea\",\n            \"last_login_at\": \"2015-02-04T06:17:46 -11:00\",\n            \"email\": \"dalearmstrong@flotonic.com\",\n            \"phone\": \"8904-083-951\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 111,\n            \"tags\": [\n                \"Munjor\",\n                \"Kula\",\n                \"Osage\",\n                \"Shindler\"\n            ],\n            \"suspended\": true,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 37,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/37.json\",\n            \"external_id\": \"bfd8811a-706b-4a18-9708-c14a87b9bb1e\",\n            \"name\": \"Denise Finch\",\n            \"alias\": \"Miss Bailey\",\n            \"created_at\": \"2016-04-18T06:31:09 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Reunion\",\n            \"last_login_at\": \"2015-10-23T05:18:08 -11:00\",\n            \"email\": \"baileyfinch@flotonic.com\",\n            \"phone\": \"8745-103-166\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 110,\n            \"tags\": [\n                \"Fairforest\",\n                \"Windsor\",\n                \"Hayes\",\n                \"Brecon\"\n            ],\n            \"suspended\": true,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 40,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/40.json\",\n            \"external_id\": \"e79e166e-fcb5-4604-9466-1ea9777c6eb5\",\n            \"name\": \"Burgess England\",\n            \"alias\": \"Mr Neal\",\n            \"created_at\": \"2016-07-16T09:13:47 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Taiwan\",\n            \"last_login_at\": \"2015-10-20T01:25:19 -11:00\",\n            \"email\": \"nealengland@flotonic.com\",\n            \"phone\": \"9675-282-161\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 113,\n            \"tags\": [\n                \"Riceville\",\n                \"Ribera\",\n                \"Caberfae\",\n                \"Breinigsville\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 42,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/42.json\",\n            \"external_id\": \"dc516f83-e4cf-4e43-b1ef-87450db34cdf\",\n            \"name\": \"Sampson Castillo\",\n            \"alias\": \"Mr Aimee\",\n            \"created_at\": \"2016-03-20T02:44:50 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Thailand\",\n            \"last_login_at\": \"2015-05-23T11:04:31 -10:00\",\n            \"email\": \"aimeecastillo@flotonic.com\",\n            \"phone\": \"8844-343-366\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 106,\n            \"tags\": [\n                \"Stagecoach\",\n                \"Bethpage\",\n                \"Johnsonburg\",\n                \"Santel\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 43,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/43.json\",\n            \"external_id\": \"08a71e65-dd92-4774-966a-876766c0f962\",\n            \"name\": \"Charlene Coleman\",\n            \"alias\": \"Mr Kaitlin\",\n            \"created_at\": \"2016-02-03T07:44:35 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Maldives\",\n            \"last_login_at\": \"2012-10-29T10:06:17 -11:00\",\n            \"email\": \"kaitlincoleman@flotonic.com\",\n            \"phone\": \"8204-383-661\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 122,\n            \"tags\": [\n                \"Wyano\",\n                \"Soudan\",\n                \"Coinjock\",\n                \"Mathews\"\n            ],\n            \"suspended\": false,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 45,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/45.json\",\n            \"external_id\": \"6c1ee6e7-060b-4ceb-8729-e80cc6dcab66\",\n            \"name\": \"Harper Sandoval\",\n            \"created_at\": \"2016-04-27T12:43:57 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Zaire\",\n            \"last_login_at\": \"2012-11-26T03:11:27 -11:00\",\n            \"email\": \"schroedersandoval@flotonic.com\",\n            \"phone\": \"9594-242-912\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 124,\n            \"tags\": [\n                \"Hemlock\",\n                \"Stewart\",\n                \"Barrelville\",\n                \"Martinsville\"\n            ],\n            \"suspended\": false,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 49,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/49.json\",\n            \"external_id\": \"4bd5e757-c0cd-445b-b702-ee3ed794f6c4\",\n            \"name\": \"Faulkner Holcomb\",\n            \"alias\": \"Miss Jody\",\n            \"created_at\": \"2016-05-12T08:39:30 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Antigua and Barbuda\",\n            \"last_login_at\": \"2014-12-04T12:51:36 -11:00\",\n            \"email\": \"jodyholcomb@flotonic.com\",\n            \"phone\": \"9255-943-719\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 118,\n            \"tags\": [\n                \"Hanover\",\n                \"Woodlake\",\n                \"Saticoy\",\n                \"Hinsdale\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 50,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/50.json\",\n            \"external_id\": \"e1378651-f998-4181-8b1b-35e99a30b900\",\n            \"name\": \"Daniel Agüilar\",\n            \"alias\": \"Mr Aüstin\",\n            \"created_at\": \"2016-04-07T12:19:09 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Malawi\",\n            \"last_login_at\": \"2016-03-08T07:57:37 -11:00\",\n            \"email\": \"austinaguilar@flotonic.com\",\n            \"phone\": \"8864-732-323\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 107,\n            \"tags\": [\n                \"Kaka\",\n                \"Abrams\",\n                \"Genoa\",\n                \"Yettem\"\n            ],\n            \"suspended\": false,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 51,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/51.json\",\n            \"external_id\": \"4a4adf11-a0e8-461d-b310-0e52a052dc73\",\n            \"name\": \"Green Buckley\",\n            \"alias\": \"Miss Esmeralda\",\n            \"created_at\": \"2016-01-21T06:02:01 -11:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Seychelles\",\n            \"last_login_at\": \"2015-03-01T03:06:05 -11:00\",\n            \"email\": \"esmeraldabuckley@flotonic.com\",\n            \"phone\": \"8154-223-420\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 125,\n            \"tags\": [\n                \"Chumuckla\",\n                \"Dixie\",\n                \"Yardville\",\n                \"Riverton\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 54,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/54.json\",\n            \"external_id\": \"a32204d7-fd49-4ba7-be1f-ca7763937e02\",\n            \"name\": \"Spence Tate\",\n            \"alias\": \"Miss Tamara\",\n            \"created_at\": \"2016-01-03T02:38:58 -11:00\",\n            \"active\": true,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Viet Nam\",\n            \"last_login_at\": \"2012-04-01T02:37:37 -11:00\",\n            \"email\": \"tamaratate@flotonic.com\",\n            \"phone\": \"8074-353-219\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 124,\n            \"tags\": [\n                \"Sterling\",\n                \"Freeburn\",\n                \"Wright\",\n                \"Naomi\"\n            ],\n            \"suspended\": true,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 55,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/55.json\",\n            \"external_id\": \"95387bef-5870-4453-9431-be6f9864bad8\",\n            \"name\": \"Thelma Wong\",\n            \"alias\": \"Miss Robertson\",\n            \"created_at\": \"2016-04-24T03:09:27 -10:00\",\n            \"active\": true,\n            \"shared\": false,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Guyana\",\n            \"last_login_at\": \"2015-11-16T09:40:58 -11:00\",\n            \"email\": \"robertsonwong@flotonic.com\",\n            \"phone\": \"8685-603-206\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 115,\n            \"tags\": [\n                \"Delshire\",\n                \"Ronco\",\n                \"Farmers\",\n                \"Foscoe\"\n            ],\n            \"suspended\": false,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 56,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/56.json\",\n            \"external_id\": \"3f693339-8c05-4619-b60e-f4892b42f340\",\n            \"name\": \"Edwards Garrétt\",\n            \"alias\": \"Miss Fréida\",\n            \"created_at\": \"2016-05-02T03:00:18 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Kenya\",\n            \"last_login_at\": \"2013-03-04T09:00:20 -11:00\",\n            \"email\": \"freidagarrett@flotonic.com\",\n            \"phone\": \"9755-523-645\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 110,\n            \"tags\": [\n                \"Edgéwatér\",\n                \"Guilford\",\n                \"Ezel\",\n                \"Matthews\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 57,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/57.json\",\n            \"external_id\": \"cc91aaa0-49af-42aa-9a85-0278fee1a96c\",\n            \"name\": \"Mari Deleon\",\n            \"alias\": \"Mr Caitlin\",\n            \"created_at\": \"2016-06-10T01:38:38 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Guatemala\",\n            \"last_login_at\": \"2014-04-21T08:53:02 -10:00\",\n            \"email\": \"caitlindeleon@flotonic.com\",\n            \"phone\": \"8645-272-680\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 113,\n            \"tags\": [\n                \"Blodgett\",\n                \"Nicut\",\n                \"Smock\",\n                \"Finzel\"\n            ],\n            \"suspended\": false,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 61,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/61.json\",\n            \"external_id\": \"981adbf1-02cd-4ff4-83f7-b6768abb25e5\",\n            \"name\": \"Clemons Mcconnell\",\n            \"alias\": \"Miss Ramos\",\n            \"created_at\": \"2016-06-28T01:58:25 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": true,\n            \"locale\": \"de-CH\",\n            \"timezone\": \"Syria\",\n            \"last_login_at\": \"2012-10-15T07:52:56 -11:00\",\n            \"email\": \"ramosmcconnell@flotonic.com\",\n            \"phone\": \"8645-852-484\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 114,\n            \"tags\": [\n                \"Jennings\",\n                \"Teasdale\",\n                \"Watrous\",\n                \"Hiwasse\"\n            ],\n            \"suspended\": true,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 62,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/62.json\",\n            \"external_id\": \"00bc3803-6d86-4fec-a237-2153618095d3\",\n            \"name\": \"Maé Bowman\",\n            \"alias\": \"Miss Lily\",\n            \"created_at\": \"2016-06-28T06:16:13 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"last_login_at\": \"2014-02-26T02:46:28 -11:00\",\n            \"email\": \"lilybowman@flotonic.com\",\n            \"phone\": \"9305-542-848\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"tags\": [\n                \"Biehle\",\n                \"Benson\",\n                \"Allentown\",\n                \"Cliff\"\n            ],\n            \"suspended\": true,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 65,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/65.json\",\n            \"external_id\": \"ce87e86c-4b45-483e-838f-ffbb5ffd5438\",\n            \"name\": \"Deanna Terry\",\n            \"alias\": \"Miss Lynda\",\n            \"created_at\": \"2016-02-20T08:59:24 -11:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Albania\",\n            \"last_login_at\": \"2013-02-13T02:57:13 -11:00\",\n            \"email\": \"lyndaterry@flotonic.com\",\n            \"phone\": \"9924-522-038\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 123,\n            \"tags\": [\n                \"Toftrees\",\n                \"Draper\",\n                \"Northridge\",\n                \"Cucumber\"\n            ],\n            \"suspended\": true,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 66,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/66.json\",\n            \"external_id\": \"e29c3611-d1f2-492e-a805-594e239ff922\",\n            \"name\": \"Geneva Poole\",\n            \"alias\": \"Mr Fernandez\",\n            \"created_at\": \"2016-04-11T10:08:08 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": true,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Aruba\",\n            \"last_login_at\": \"2014-03-18T05:42:21 -11:00\",\n            \"email\": \"fernandezpoole@flotonic.com\",\n            \"phone\": \"8925-633-579\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 114,\n            \"tags\": [\n                \"Whitehaven\",\n                \"Omar\",\n                \"Waiohinu\",\n                \"Catharine\"\n            ],\n            \"suspended\": true,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 67,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/67.json\",\n            \"external_id\": \"01dd136a-bf3b-4340-94ee-8ecbea6fd65f\",\n            \"name\": \"Benjamin Stephenson\",\n            \"alias\": \"Miss Louisa\",\n            \"created_at\": \"2016-04-20T12:26:44 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Oman\",\n            \"last_login_at\": \"2016-04-06T12:17:21 -10:00\",\n            \"email\": \"louisastephenson@flotonic.com\",\n            \"phone\": \"9914-712-033\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 122,\n            \"tags\": [\n                \"Fairhaven\",\n                \"Kraemer\",\n                \"Mayfair\",\n                \"Saranap\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        },\n        {\n            \"_id\": 68,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/68.json\",\n            \"external_id\": \"9d8577b6-bffa-4abf-8bd5-c3b673dd0855\",\n            \"name\": \"Sweet Cain\",\n            \"alias\": \"Mr Hyde\",\n            \"created_at\": \"2016-01-30T01:07:23 -11:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": true,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Iran\",\n            \"last_login_at\": \"2015-01-21T09:46:57 -11:00\",\n            \"email\": \"hydecain@flotonic.com\",\n            \"phone\": \"9555-513-950\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 116,\n            \"tags\": [\n                \"Fairlee\",\n                \"Grandview\",\n                \"Fairview\",\n                \"Williston\"\n            ],\n            \"suspended\": false,\n            \"role\": \"admin\"\n        },\n        {\n            \"_id\": 69,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/69.json\",\n            \"external_id\": \"0320fff9-8a1f-4654-a8d5-dbf3c9c79591\",\n            \"name\": \"Velasquez Cameron\",\n            \"alias\": \"Miss Janette\",\n            \"created_at\": \"2016-04-04T03:34:12 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": true,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Cyprus\",\n            \"last_login_at\": \"2015-02-02T02:22:18 -11:00\",\n            \"email\": \"janettecameron@flotonic.com\",\n            \"phone\": \"9494-843-571\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 102,\n            \"tags\": [\n                \"Leyner\",\n                \"Wawona\",\n                \"Soham\",\n                \"Sheatown\"\n            ],\n            \"suspended\": true,\n            \"role\": \"end-user\"\n        },\n        {\n            \"_id\": 71,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/71.json\",\n            \"external_id\": \"c972bb41-94aa-4f20-bc93-e63dbfe8d9ca\",\n            \"name\": \"Prince Hinton\",\n            \"alias\": \"Miss Dana\",\n            \"created_at\": \"2016-04-18T11:05:43 -10:00\",\n            \"active\": true,\n            \"verified\": false,\n            \"shared\": false,\n            \"locale\": \"zh-CN\",\n            \"timezone\": \"Samoa\",\n            \"last_login_at\": \"2013-05-01T01:18:48 -10:00\",\n            \"email\": \"danahinton@flotonic.com\",\n            \"phone\": \"9064-433-892\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 121,\n            \"tags\": [\n                \"Davenport\",\n                \"Cherokee\",\n                \"Summertown\",\n                \"Clinton\"\n            ],\n            \"suspended\": false,\n            \"role\": \"agent\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "search on array field",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/1/tags?value=Springville",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"1",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "Springville"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:21:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "611"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Search Results\",\n    \"data\": [\n        {\n            \"_id\": 1,\n            \"url\": \"http://initech.aiworks.com/api/v2/users/1.json\",\n            \"external_id\": \"74341f74-9c79-49d5-9611-87ef9b6eb75f\",\n            \"name\": \"Francisca Rasmussen\",\n            \"alias\": \"Miss Coffey\",\n            \"created_at\": \"2016-04-15T05:19:46 -10:00\",\n            \"active\": true,\n            \"verified\": true,\n            \"shared\": false,\n            \"locale\": \"en-AU\",\n            \"timezone\": \"Sri Lanka\",\n            \"last_login_at\": \"2013-08-04T01:03:27 -10:00\",\n            \"email\": \"coffeyrasmussen@flotonic.com\",\n            \"phone\": \"8335-422-718\",\n            \"signature\": \"Don't Worry Be Happy!\",\n            \"organization_id\": 119,\n            \"tags\": [\n                \"Springville\",\n                \"Sutton\",\n                \"Hartsville/Hartley\",\n                \"Diaperville\"\n            ],\n            \"suspended\": true,\n            \"role\": \"admin\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "tickets_search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"2",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sucess",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"2",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:20:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1292"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"List of Searchable Values\",\n    \"data\": {\n        \"_id\": \"http://127.0.0.1:8000/2/_id?value=<insert_your_value_here>\",\n        \"url\": \"http://127.0.0.1:8000/2/url?value=<insert_your_value_here>\",\n        \"external_id\": \"http://127.0.0.1:8000/2/external_id?value=<insert_your_value_here>\",\n        \"created_at\": \"http://127.0.0.1:8000/2/created_at?value=<insert_your_value_here>\",\n        \"type\": \"http://127.0.0.1:8000/2/type?value=<insert_your_value_here>\",\n        \"subject\": \"http://127.0.0.1:8000/2/subject?value=<insert_your_value_here>\",\n        \"description\": \"http://127.0.0.1:8000/2/description?value=<insert_your_value_here>\",\n        \"priority\": \"http://127.0.0.1:8000/2/priority?value=<insert_your_value_here>\",\n        \"status\": \"http://127.0.0.1:8000/2/status?value=<insert_your_value_here>\",\n        \"submitter_id\": \"http://127.0.0.1:8000/2/submitter_id?value=<insert_your_value_here>\",\n        \"assignee_id\": \"http://127.0.0.1:8000/2/assignee_id?value=<insert_your_value_here>\",\n        \"organization_id\": \"http://127.0.0.1:8000/2/organization_id?value=<insert_your_value_here>\",\n        \"tags\": \"http://127.0.0.1:8000/2/tags?value=<insert_your_value_here>\",\n        \"has_incidents\": \"http://127.0.0.1:8000/2/has_incidents?value=<insert_your_value_here>\",\n        \"due_at\": \"http://127.0.0.1:8000/2/due_at?value=<insert_your_value_here>\",\n        \"via\": \"http://127.0.0.1:8000/2/via?value=<insert_your_value_here>\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "tickets_fields_search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/2/submitter_id?value=34",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"2",
+						"submitter_id"
+					],
+					"query": [
+						{
+							"key": "value",
+							"value": "34"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/2/submitter_id?value=34",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"2",
+								"submitter_id"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "34"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:23:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2768"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Search Results\",\n    \"data\": [\n        {\n            \"_id\": \"b539a7db-1166-4537-9a5e-d2a97dd432bd\",\n            \"url\": \"http://initech.aiworks.com/api/v2/tickets/b539a7db-1166-4537-9a5e-d2a97dd432bd.json\",\n            \"external_id\": \"5150a02f-0aca-4db3-a1f7-91998df71794\",\n            \"created_at\": \"2016-01-16T09:56:03 -11:00\",\n            \"type\": \"task\",\n            \"subject\": \"A Catastrophe in Lesotho\",\n            \"description\": \"Lorem laboris sunt ullamco laboris fugiat minim adipisicing nisi proident officia mollit sunt ipsum. Aliquip nulla mollit consequat non anim elit id nostrud mollit pariatur ut non.\",\n            \"priority\": \"low\",\n            \"status\": \"solved\",\n            \"submitter_id\": 34,\n            \"assignee_id\": 37,\n            \"organization_id\": 120,\n            \"tags\": [\n                \"Oregon\",\n                \"Arizona\",\n                \"Delaware\",\n                \"New Hampshire\"\n            ],\n            \"has_incidents\": true,\n            \"due_at\": \"2016-07-30T02:22:24 -10:00\",\n            \"via\": \"chat\"\n        },\n        {\n            \"_id\": \"0f823d66-7e6e-4867-949f-1308a25ab2b0\",\n            \"url\": \"http://initech.aiworks.com/api/v2/tickets/0f823d66-7e6e-4867-949f-1308a25ab2b0.json\",\n            \"external_id\": \"726862ae-4d48-45e7-b133-e037e9a73708\",\n            \"created_at\": \"2016-04-03T06:23:21 -10:00\",\n            \"type\": \"incident\",\n            \"subject\": \"A Catastrophe in Iran\",\n            \"description\": \"In laboris minim quis veniam tempor aliquip Lorem eu exercitation sunt sint id cupidatat. Excepteur magna elit anim velit laborum incididunt cupidatat laborum.\",\n            \"priority\": \"urgent\",\n            \"status\": \"pending\",\n            \"submitter_id\": 34,\n            \"assignee_id\": 19,\n            \"organization_id\": 105,\n            \"tags\": [\n                \"South Dakota\",\n                \"Montana\",\n                \"District Of Columbia\",\n                \"Wisconsin\"\n            ],\n            \"has_incidents\": true,\n            \"due_at\": \"2016-08-01T08:10:54 -10:00\",\n            \"via\": \"web\"\n        },\n        {\n            \"_id\": \"05291c66-f705-45a9-834d-4f594b236ff6\",\n            \"url\": \"http://initech.aiworks.com/api/v2/tickets/05291c66-f705-45a9-834d-4f594b236ff6.json\",\n            \"external_id\": \"ca469d71-643f-404a-bc0f-8aab53d900d5\",\n            \"created_at\": \"2016-02-12T10:47:55 -11:00\",\n            \"type\": \"task\",\n            \"subject\": \"A Drama in Saint Vincent and The Grenadines\",\n            \"description\": \"Voluptate aliqua in do sint quis consectetur id voluptate. Elit sint eu ullamco eiusmod incididunt dolore elit elit.\",\n            \"priority\": \"normal\",\n            \"status\": \"open\",\n            \"submitter_id\": 34,\n            \"assignee_id\": 50,\n            \"organization_id\": 105,\n            \"tags\": [\n                \"Utah\",\n                \"Hawaii\",\n                \"Alaska\",\n                \"Maryland\"\n            ],\n            \"has_incidents\": true,\n            \"due_at\": \"2016-08-11T09:24:15 -10:00\",\n            \"via\": \"web\"\n        },\n        {\n            \"_id\": \"30094238-46cd-4921-b1c1-4757906cd028\",\n            \"url\": \"http://initech.aiworks.com/api/v2/tickets/30094238-46cd-4921-b1c1-4757906cd028.json\",\n            \"external_id\": \"c6039df7-28e1-48db-88b3-4e0575ef4de0\",\n            \"created_at\": \"2016-03-24T10:39:29 -11:00\",\n            \"type\": \"question\",\n            \"subject\": \"A Catastrophe in Bahamas\",\n            \"description\": \"Mollit dolor laborum elit aliquip ipsum est reprehenderit. Voluptate id laborum Lorem excepteur do velit cupidatat culpa est magna exercitation aliquip.\",\n            \"priority\": \"high\",\n            \"status\": \"open\",\n            \"submitter_id\": 34,\n            \"assignee_id\": 41,\n            \"organization_id\": 120,\n            \"tags\": [\n                \"Guam\",\n                \"Colorado\",\n                \"Washington\",\n                \"Wyoming\"\n            ],\n            \"has_incidents\": true,\n            \"due_at\": \"2016-08-10T10:10:33 -10:00\",\n            \"via\": \"voice\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "missing value query parameter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/2/submitter_id?valued=34",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"2",
+								"submitter_id"
+							],
+							"query": [
+								{
+									"key": "valued",
+									"value": "34"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:24:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "158"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": true,\n    \"message\": \"Please Provide Value Query Parameter\",\n    \"data\": {\n        \"submitter_id\": \"http://127.0.0.1:8000/2/submitter_id/?value=<insert_your_value_here>\"\n    }\n}"
+				},
+				{
+					"name": "wrong searchable filed name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/2/submitter",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"2",
+								"submitter"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:27:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1295"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": true,\n    \"message\": \"Please Search on These Values\",\n    \"data\": {\n        \"_id\": \"http://127.0.0.1:8000/2/_id?value=<insert_your_value_here>\",\n        \"url\": \"http://127.0.0.1:8000/2/url?value=<insert_your_value_here>\",\n        \"external_id\": \"http://127.0.0.1:8000/2/external_id?value=<insert_your_value_here>\",\n        \"created_at\": \"http://127.0.0.1:8000/2/created_at?value=<insert_your_value_here>\",\n        \"type\": \"http://127.0.0.1:8000/2/type?value=<insert_your_value_here>\",\n        \"subject\": \"http://127.0.0.1:8000/2/subject?value=<insert_your_value_here>\",\n        \"description\": \"http://127.0.0.1:8000/2/description?value=<insert_your_value_here>\",\n        \"priority\": \"http://127.0.0.1:8000/2/priority?value=<insert_your_value_here>\",\n        \"status\": \"http://127.0.0.1:8000/2/status?value=<insert_your_value_here>\",\n        \"submitter_id\": \"http://127.0.0.1:8000/2/submitter_id?value=<insert_your_value_here>\",\n        \"assignee_id\": \"http://127.0.0.1:8000/2/assignee_id?value=<insert_your_value_here>\",\n        \"organization_id\": \"http://127.0.0.1:8000/2/organization_id?value=<insert_your_value_here>\",\n        \"tags\": \"http://127.0.0.1:8000/2/tags?value=<insert_your_value_here>\",\n        \"has_incidents\": \"http://127.0.0.1:8000/2/has_incidents?value=<insert_your_value_here>\",\n        \"due_at\": \"http://127.0.0.1:8000/2/due_at?value=<insert_your_value_here>\",\n        \"via\": \"http://127.0.0.1:8000/2/via?value=<insert_your_value_here>\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "organizations_search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"3",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/3/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"3",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:29:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "747"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"List of Searchable Values\",\n    \"data\": {\n        \"_id\": \"http://127.0.0.1:8000/3/_id?value=<insert_your_value_here>\",\n        \"url\": \"http://127.0.0.1:8000/3/url?value=<insert_your_value_here>\",\n        \"external_id\": \"http://127.0.0.1:8000/3/external_id?value=<insert_your_value_here>\",\n        \"name\": \"http://127.0.0.1:8000/3/name?value=<insert_your_value_here>\",\n        \"domain_names\": \"http://127.0.0.1:8000/3/domain_names?value=<insert_your_value_here>\",\n        \"created_at\": \"http://127.0.0.1:8000/3/created_at?value=<insert_your_value_here>\",\n        \"details\": \"http://127.0.0.1:8000/3/details?value=<insert_your_value_here>\",\n        \"shared_tickets\": \"http://127.0.0.1:8000/3/shared_tickets?value=<insert_your_value_here>\",\n        \"tags\": \"http://127.0.0.1:8000/3/tags?value=<insert_your_value_here>\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "organizations_fields_search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/3/_id?value=115",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"3",
+						"_id"
+					],
+					"query": [
+						{
+							"key": "value",
+							"value": "115"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/3/_id?value=115",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"3",
+								"_id"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "115"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:30:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "407"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Search Results\",\n    \"data\": [\n        {\n            \"_id\": 115,\n            \"url\": \"http://initech.aiworks.com/api/v2/organizations/115.json\",\n            \"external_id\": \"71010066-113a-48b5-8498-184ae2c72f93\",\n            \"name\": \"Netur\",\n            \"domain_names\": [\n                \"tubalum.com\",\n                \"imaginart.com\",\n                \"olucore.com\",\n                \"uniworld.com\"\n            ],\n            \"created_at\": \"2016-07-25T01:19:05 -10:00\",\n            \"details\": \"Artisan\",\n            \"shared_tickets\": false,\n            \"tags\": [\n                \"Wilkerson\",\n                \"Knight\",\n                \"Stephenson\",\n                \"Witt\"\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "missing value query parameter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/3/_id?valuesssss=115",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"3",
+								"_id"
+							],
+							"query": [
+								{
+									"key": "valuesssss",
+									"value": "115"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:31:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "140"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": true,\n    \"message\": \"Please Provide Value Query Parameter\",\n    \"data\": {\n        \"_id\": \"http://127.0.0.1:8000/3/_id/?value=<insert_your_value_here>\"\n    }\n}"
+				},
+				{
+					"name": "wrong searchable field name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/3/searching?value=110",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"3",
+								"searching"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "110"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:32:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "750"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": true,\n    \"message\": \"Please Search on These Values\",\n    \"data\": {\n        \"_id\": \"http://127.0.0.1:8000/3/_id?value=<insert_your_value_here>\",\n        \"url\": \"http://127.0.0.1:8000/3/url?value=<insert_your_value_here>\",\n        \"external_id\": \"http://127.0.0.1:8000/3/external_id?value=<insert_your_value_here>\",\n        \"name\": \"http://127.0.0.1:8000/3/name?value=<insert_your_value_here>\",\n        \"domain_names\": \"http://127.0.0.1:8000/3/domain_names?value=<insert_your_value_here>\",\n        \"created_at\": \"http://127.0.0.1:8000/3/created_at?value=<insert_your_value_here>\",\n        \"details\": \"http://127.0.0.1:8000/3/details?value=<insert_your_value_here>\",\n        \"shared_tickets\": \"http://127.0.0.1:8000/3/shared_tickets?value=<insert_your_value_here>\",\n        \"tags\": \"http://127.0.0.1:8000/3/tags?value=<insert_your_value_here>\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
