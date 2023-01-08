@@ -53,7 +53,7 @@ MONGO_DATABASE_HOST = "mongodb://" + MONGO_USER + ":" + MONGO_PASS + "@"+MONGO_P
 python manage.py runserver 8000
 ```
 
-##### Import postman collection from 'Search Backend.postman_collection.json' file
+## Import collection from 'Search Backend.postman_collection.json' file into postman
 
 ## Road Map/Future Plan
 - Writing Django unit tests
